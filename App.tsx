@@ -58,7 +58,7 @@ const App: React.FC = () => {
             
             <div className="space-y-6">
               <ParamControl 
-                label="单缝宽度 a (mm)" value={params.slitWidth} min={10} max={150} step={1}
+                label="单缝宽度 a (mm)" value={params.slitWidth} min={0} max={150} step={1}
                 onChange={v => setParams({...params, slitWidth: v})} 
               />
               <ParamControl 
